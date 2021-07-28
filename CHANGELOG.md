@@ -1,10 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.1]
+
+### Chnaged
+- Updated to Minecraft 1.17.1
 
 ## [1.0]
 
 ### Added
 - First release
 
+[1.1]: https://github.com/apexhosting/SkyGrid/releases/tag/1.1
 [1.0]: https://github.com/apexhosting/SkyGrid/releases/tag/1.0
