@@ -3,24 +3,23 @@ All notable changes to this project will be documented in this file.
 
 ## [1.4]
 
-- Corrected permissions & group issues within Luckperms.
+### Changed
 
-### Chnaged
-- Added the Via suite of plugins for version support.
+- Corrected permissions & group issues within Luckperms.
 
 ## [1.3]
 
-### Chnaged
+### Changed
 - Added the Via suite of plugins for version support.
 
 ## [1.2]
 
-### Chnaged
+### Changed
 - Updated to Minecraft 1.18.1
 
 ## [1.1]
 
-### Chnaged
+### Changed
 - Updated to Minecraft 1.17.1
 
 ## [1.0]
