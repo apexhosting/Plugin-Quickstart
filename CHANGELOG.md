@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.5]
+
+- Added GriefPrevention, TAB, 1.19 support
+- Removed HolographicDisplays
+- Updated all plugins to latest versions 1.19.
+
+- Added Ranks
+-> Owner 
+-> Admin 
+-> Mod 
+-> VIP+ 
+-> VIP 
+-> Default
+
 ## [1.4]
 
 ### Changed
@@ -26,6 +40,8 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - First release
+
+[1.5]: https://github.com/apexhosting/SkyGrid/releases/tag/1.5
 [1.4]: https://github.com/apexhosting/SkyGrid/releases/tag/1.4
 [1.3]: https://github.com/apexhosting/SkyGrid/releases/tag/1.3
 [1.2]: https://github.com/apexhosting/SkyGrid/releases/tag/1.2

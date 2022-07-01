@@ -1,24 +1,3 @@
-#
-# WorldGuard's main configuration file
-#
-# This is the global configuration file. Anything placed into here will
-# be applied to all worlds. However, each world has its own configuration
-# file to allow you to replace most settings in here for that world only.
-#
-# About editing this file:
-# - DO NOT USE TABS. You MUST use spaces or Bukkit will complain. If
-#   you use an editor like Notepad++ (recommended for Windows users), you
-#   must configure it to "replace tabs with spaces." In Notepad++, this can
-#   be changed in Settings > Preferences > Language Menu.
-# - Don't get rid of the indents. They are indented so some entries are
-#   in categories (like "enforce-single-session" is in the "protection"
-#   category.
-# - If you want to check the format of this file before putting it
-#   into WorldGuard, paste it into http://yaml-online-parser.appspot.com/
-#   and see if it gives "ERROR:".
-# - Lines starting with # are comments and so they are ignored.
-#
-
 regions:
     uuid-migration:
         perform-on-next-start: false
@@ -26,12 +5,6 @@ regions:
     use-creature-spawn-event: true
     disable-bypass-by-default: false
     announce-bypass-status: false
-    sql:
-        use: false
-        dsn: jdbc:mysql://localhost/worldguard
-        username: worldguard
-        password: worldguard
-        table-prefix: ''
     use-paper-entity-origin: false
     enable: true
     invincibility-removes-mobs: false
@@ -47,6 +20,7 @@ regions:
     location-flags-only-inside-regions: false
     max-region-count-per-player:
         default: 7
+    set-parent-on-claim: ''
 auto-invincible: false
 auto-invincible-group: false
 auto-no-drowning-group: false
@@ -74,17 +48,11 @@ protection:
     item-durability: true
     remove-infinite-stacks: false
     disable-xp-orb-drops: false
-    disable-obsidian-generators: false
     use-max-priority-association: false
 gameplay:
     block-potions: []
     block-potions-overly-reliably: false
     disable-conduit-effects: false
-simulation:
-    sponge:
-        enable: false
-        radius: 3
-        redstone: false
 default:
     pumpkin-scuba: false
     disable-health-regain: false
@@ -142,9 +110,6 @@ player-damage:
     disable-explosion-damage: false
     disable-mob-damage: false
     disable-death-messages: false
-chest-protection:
-    enable: false
-    disable-off-check: false
 crops:
     disable-creature-trampling: false
     disable-player-trampling: false
@@ -175,6 +140,7 @@ dynamics:
     disable-soil-dehydration: false
     disable-coral-block-fade: false
     snow-fall-blocks: []
+    disable-rock-growth: false
 blacklist:
     use-as-whitelist: false
     logging:
