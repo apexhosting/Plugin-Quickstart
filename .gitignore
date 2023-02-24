@@ -1,5 +1,0 @@
-*.zip
-plugins/bStats/*
-plugins/CoreProtect/database.db
-plugins/LuckPerms/translations/*
-plugins/WorldEdit/.archive-unpack/*
