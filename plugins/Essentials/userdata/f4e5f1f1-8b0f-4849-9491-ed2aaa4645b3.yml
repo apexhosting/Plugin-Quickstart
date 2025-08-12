@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: true
+muted: false
+jailed: false
+ip-address: 174.74.6.84
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1656541844804
+  login: 1656540461557
+money: '0'
+last-account-name: Hitosherizu
+lastlocation:
+  world: 16d81b4e-ecba-4de0-81b2-001b758bc659
+  world-name: world
+  x: -7.5
+  y: 110.0
+  z: 9.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: 16d81b4e-ecba-4de0-81b2-001b758bc659
+  world-name: world
+  x: 6.9389919443545836
+  y: 116.10717296174785
+  z: -3.335660078027948
+  yaw: 3.847412109375
+  pitch: 22.649755477905273

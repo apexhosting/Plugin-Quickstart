@@ -1,14 +1,15 @@
 # Default values are perfect for most servers.  If you want to customize and have a question, look for the answer here first: http://dev.bukkit.org/bukkit-plugins/grief-prevention/pages/setup-and-configuration/
+
 GriefPrevention:
   SeaLevelOverrides:
-    gt_plugins_1626597: -1
-    gt_plugins_1626597_nether: -1
-    gt_plugins_1626597_the_end: -1
+    QSPlugins: -1
+    QSPlugins_nether: -1
+    QSPlugins_the_end: -1
   Claims:
     Mode:
-      gt_plugins_1626597_the_end: Disabled
-      gt_plugins_1626597_nether: Disabled
-      gt_plugins_1626597: Survival
+      QSPlugins: Survival
+      QSPlugins_the_end: Disabled
+      QSPlugins_nether: Disabled
     PreventGlobalMonsterEggs: true
     PreventTheft: true
     ProtectCreatures: true
@@ -34,7 +35,7 @@ GriefPrevention:
     ExtendIntoGroundDistance: 5
     MinimumWidth: 5
     MinimumArea: 100
-    MaximumDepth: 0
+    MaximumDepth: -2147483648
     InvestigationTool: STICK
     ModificationTool: GOLDEN_SHOVEL
     Expiration:
@@ -58,7 +59,7 @@ GriefPrevention:
     FireDamagesInClaims: false
     LecternReadingRequiresAccessTrust: true
   Spam:
-    Enabled: true
+    Enabled: false
     LoginCooldownSeconds: 60
     LoginLogoutNotificationsPerMinute: 5
     ChatSlashCommands: /me;/global;/local
@@ -71,9 +72,9 @@ GriefPrevention:
     Logout Message Delay In Seconds: 0
   PvP:
     RulesEnabledInWorld:
-      gt_plugins_1626597: true
-      gt_plugins_1626597_nether: true
-      gt_plugins_1626597_the_end: true
+      QSPlugins: true
+      QSPlugins_nether: true
+      QSPlugins_the_end: true
     ProtectFreshSpawns: true
     PunishLogout: true
     CombatTimeoutSeconds: 15
@@ -108,9 +109,11 @@ GriefPrevention:
   FireDestroys: false
   AdminsGetWhispers: true
   AdminsGetSignNotifications: true
+  VisualizationAntiCheatCompatMode: false
   SmartBan: true
   Mute New Players Using Banned Words: true
   MaxPlayersPerIpAddress: 3
+  SilenceBans: true
   Siege:
     Worlds: []
     BreakableBlocks:
@@ -126,7 +129,7 @@ GriefPrevention:
     - SAND
     - GRAVEL
     - GLASS
-    - GRASS
+    - GRASS     <-- can't understand this entry, see BukkitDev documentation
     - FERN
     - DEAD_BUSH
     - WHITE_WOOL
@@ -154,6 +157,7 @@ GriefPrevention:
   CreaturesTrampleCrops: false
   RabbitsEatCrops: true
   HardModeZombiesBreakDoors: false
+  MobProjectilesChangeBlocks: false
   Database:
     URL: ''
     UserName: ''
@@ -172,3 +176,4 @@ GriefPrevention:
       Administrative Activity: false
       Debug: false
       Muted Chat Messages: false
+  ConfigVersion: 1

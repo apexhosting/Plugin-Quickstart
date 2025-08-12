@@ -24,7 +24,7 @@ if (strcmp($userid, '-guest-')) {
     $loggedin = true;
 }
 
-$path = $_REQUEST['tile'];
+$path = htmlspecialchars($_REQUEST['tile']);
 if ((!isset($path)) || strstr($path, "..")) {
     header('HTTP/1.0 500 Error');
     echo "<h1>500 Error</h1>";
@@ -74,6 +74,8 @@ if (strstr($path, ".png")) {
     header("Content-Type: image/png");
 } elseif (strstr($path, ".jpg")) {
     header("Content-Type: image/jpeg");
+} elseif (strstr($path, ".webp")) {
+    header("Content-Type: image/webp");
 } else {
     header("Content-Type: application/text");
 }

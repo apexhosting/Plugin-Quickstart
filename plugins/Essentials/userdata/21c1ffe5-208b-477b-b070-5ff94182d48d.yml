@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 199.19.164.155
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738362451788
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738362904276
+  login: 1738362811521
+money: '0'
+last-account-name: MerKaiRain
+lastlocation:
+  world: 07c366ef-dbbe-4483-bfdb-a131ce46272f
+  world-name: QSPlugins
+  x: -97.52453091310849
+  y: 22.0
+  z: -19.111505014605044
+  yaw: -63.82183837890625
+  pitch: 3.388880729675293
+logoutlocation:
+  world: 07c366ef-dbbe-4483-bfdb-a131ce46272f
+  world-name: QSPlugins
+  x: -1.8594724455078302
+  y: 84.0
+  z: 0.38947309221603205
+  yaw: -177.4275665283203
+  pitch: 32.56163024902344

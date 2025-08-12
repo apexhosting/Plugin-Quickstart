@@ -194,7 +194,9 @@ var DynmapTileLayer = L.TileLayer.extend({
 		if (!url) {
 			this._cachedTileUrls[tileName] = url = this.options.dynmap.getTileUrl(tileName);
 		}
-
+		if (typeof timestamp === 'undefined') {
+		   timestamp = this.options.dynmap.inittime
+		}
 		if(typeof timestamp !== 'undefined') {
 			url += (url.indexOf('?') === -1 ? '?timestamp=' + timestamp : '&timestamp=' + timestamp);
 		}
@@ -237,7 +239,7 @@ var DynmapTileLayer = L.TileLayer.extend({
 
 	// Some helper functions.
 	zoomprefix: function(amount) {
-		return 'zzzzzzzzzzzzzzzzzzzzzz'.substr(0, amount);
+		return ' zzzzzzzzzzzzzzzzzzzzzzzzzz'.substr(0, amount);
 	},
 
 	getTileInfo: function(coords) {

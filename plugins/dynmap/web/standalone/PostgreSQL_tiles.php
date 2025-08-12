@@ -19,7 +19,7 @@ if (strcmp($userid, '-guest-')) {
     $loggedin = true;
 }
 
-$path = $_REQUEST['tile'];
+$path = htmlspecialchars($_REQUEST['tile']);
 if ((!isset($path)) || strstr($path, "..")) {
     header('HTTP/1.0 500 Error');
     echo "<h1>500 Error</h1>";
@@ -93,11 +93,13 @@ list($timage, $format, $thash, $tlast) = $stmt->fetch();
 if ($res && $timage) {
     if ($format == 0) {
         header('Content-Type: image/png');
+    } else if ($format == 2) {
+        header('Content-Type: image/webp');
     } else {
         header('Content-Type: image/jpeg');
     }
     header('ETag: \'' . $thash . '\'');
-    header('Last-Modified: ' . gmdate('D, d M Y H:i:s', $tlast / 1000) . ' GMT');
+    header('Last-Modified: ' . gmdate('D, d M Y H:i:s', (int) ($tlast / 1000)) . ' GMT');
     echo stream_get_contents($timage);
 } else {
     header('Location: ../images/blank.png');

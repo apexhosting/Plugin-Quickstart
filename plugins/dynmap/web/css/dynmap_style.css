@@ -411,7 +411,7 @@
 
 .dynmap .sublist .item > a {
     display: block;
-
+    
     text-indent: -99999px;
     outline: none;
 }
@@ -568,6 +568,14 @@
    -webkit-transition: all 0.6s ease-in-out 0s;
    -o-transition: all 0.6s ease-in-out 0s;
    transition: all 0.6s ease-in-out 0s;
+}
+
+/* do not animate player movements when zooming */
+.dynmap .leaflet-zoom-anim .leaflet-zoom-animated.playerMarker {
+    -moz-transition: -moz-transform 0.25s cubic-bezier(0,0,0.25,1);
+    -webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1);
+    -o-transition: transform 0.25s cubic-bezier(0,0,0.25,1);
+    transition: transform 0.25s cubic-bezier(0,0,0.25,1);
 }
 
 .dynmap .playerIcon {
@@ -806,10 +814,10 @@
 }
 
 .chatinput {
-
+    position: absolute;
 	width: 608px;
 	height: 16px;
-
+    bottom: 8px;
 	outline: none;
 	color: #fff;
 	background-color: #000000;
@@ -829,6 +837,9 @@
 }
 
 .loginbutton {
+    position: absolute;
+	bottom: 0px;
+	right: 4px;
 	color: #000;
 	font-family: sans-serif;
 	font-size: 11px;
@@ -905,15 +916,15 @@
 
     color: #fff;
     background: rgba(0,0,0,0.6);
-    padding: 2px;
+    padding: 2px 6px;
 
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
 
 .dynmap .mapMarker .markerName16x16 {
-	top: -6px;
-	left: 10px;
+	top: -12px;
+	left: 12px;
 }
 
 .dynmap .mapMarker .markerName8x8 {

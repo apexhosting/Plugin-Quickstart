@@ -1,0 +1,26 @@
+# Available axes , If not selected, all will work
+# To add an axe to a block list, just remove the “#” symbol.
+worked-axes:
+- '#WOODEN_AXE'
+- '#STONE_AXE'
+- '#IRON_AXE'
+- '#GOLDEN_AXE'
+- '#DIAMOND_AXE'
+# If enabled, you will be notified when new versions are available
+version-notifier: true
+# Need for testing plugin, do not use on production 
+debug: false
+# how much strength is removed by chopping wood.
+axe-durability: 1
+# Sowing a seedling after cutting down a tree
+plant-sapling: true
+# If you add a tree type it won't cut down instantly, only one block at a time
+# To add a tree to a block sheet, simply remove the “#” symbol.
+blocked-trees:
+- '#ACACIA_LOG'
+- '#OAK_LOG'
+# The name of the plugin is displayed in the chat.
+plugin-prefix: '[TreeTimber] '
+# if false everyone can cut down a tree
+# If true, then you need to give the group the permission "timber.capitate"
+needsperms: false

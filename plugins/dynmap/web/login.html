@@ -7,11 +7,11 @@
 	<title> Minecraft Dynamic Map - Login/Register </title>
 	<link rel="icon" href="images/dynmap.ico" type="image/ico" />
 
-	<link rel="stylesheet" type="text/css" href="css/leaflet.css?_=3.3-beta-3-591" />
-	<link rel="stylesheet" type="text/css" href="css/standalone.css?_=3.3-beta-3-591" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/dynmap_style.css?_=3.3-beta-3-591" media="screen" />
-	<script type="text/javascript" src="standalone/config.js?_=3.3-beta-3-591"></script>
-	<script type="text/javascript" src="js/jquery-3.5.1.js?_=3.3-beta-3-591"></script>
+	<link rel="stylesheet" type="text/css" href="css/leaflet.css?_=3.7-SNAPSHOT-985" />
+	<link rel="stylesheet" type="text/css" href="css/standalone.css?_=3.7-SNAPSHOT-985" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/dynmap_style.css?_=3.7-SNAPSHOT-985" media="screen" />
+	<script type="text/javascript" src="standalone/config.js?_=3.7-SNAPSHOT-985"></script>
+	<script type="text/javascript" src="js/jquery-3.5.1.js?_=3.7-SNAPSHOT-985"></script>
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -62,11 +62,11 @@
 <tr><td class='login'>
 <FORM METHOD=POST name=login ACTION="up/login">
 <p>
-Enter user ID and password:
+Enter username and password:
 <BR>
 <BR>
 <table>
-<tr><td>User ID</td><td><input type="text" size="20" name="j_username"></td></tr>
+<tr><td>Username</td><td><input type="text" size="20" name="j_username"></td></tr>
 <tr><td>Password</td><td><input type="password" size="20" name="j_password"></td></tr>
 </table>
 <BR>
@@ -80,11 +80,11 @@ Enter user ID and password:
 <td class='register'>
 <FORM METHOD=POST name=register ACTION="up/register">
 <p>
-Run '/dynmap webregister' and enter returned registration code, along with userid and password:
+Run '/dynmap webregister' and enter your username and registration code, and create a password:
 <BR>
 <BR>
 <table>
-<tr><td>User ID</td><td><input type="text" size="20" name="j_username"></td></tr>
+<tr><td>Username</td><td><input type="text" size="20" name="j_username"></td></tr>
 <tr><td>Password</td><td><input type="password" size="20" name="j_password"></td></tr>
 <tr><td>Verify Password</td><td><input type="password" size="20" name="j_verify_password"></td></tr>
 <tr><td>Registration Code</td><td><input type="text" size="20" name="j_passcode"></td></tr>
